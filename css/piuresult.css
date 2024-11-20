@@ -1,0 +1,103 @@
+/* Result Section */
+.result-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.result-card, .analysis-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.result-card h2, .analysis-card h2 {
+    color: #4e54c8;
+    margin-bottom: 1rem;
+}
+
+.result-card p, .analysis-card p {
+    margin: 0.5rem 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Action Section */
+.action-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.action-section h2 {
+    color: #4e54c8;
+    margin-bottom: 1rem;
+}
+
+.action-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.action-section .btn {
+    display: inline-block;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.action-section .btn:hover {
+    background: #3c42a8;
+    transform: translateY(-2px);
+}
+
+/* Chart Containers */
+.chart-container {
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.chart-container h2 {
+    margin-bottom: 1rem;
+    color: #4e54c8;
+    font-size: 1.5rem;
+}
+
+canvas {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Insights Section */
+.analysis-card {
+    margin-top: 2rem;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #555;
+}

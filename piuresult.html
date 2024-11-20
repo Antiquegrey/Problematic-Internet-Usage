@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="piuresult.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PredictiveNet</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prediction.html">Prediction Form</a></li>
+                <li><a href="result.html" class="active">Result</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="result-section">
+            <h1>Prediction Result</h1>
+            <p>Your internet usage analysis is ready. Below is your personalized summary with visual insights:</p>
+
+            <div class="chart-container">
+                <h2><i class="fas fa-chart-bar"></i> Daily Internet Usage</h2>
+                <canvas id="usageChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h2><i class="fas fa-pie-chart"></i> Behavioral Patterns</h2>
+                <canvas id="patternsChart"></canvas>
+            </div>
+
+            <div class="analysis-card">
+                <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
+                <p>
+                    Based on your internet usage of <strong><span id="timeAnalysis">4 hours</span></strong> per day, your activities 
+                    focus primarily on **social media** and **streaming**. Use these insights to balance your habits.
+                </p>
+            </div>
+        </section>
+
+        <section class="action-section">
+            <h2>Next Steps</h2>
+            <p>Take control of your internet usage by making informed choices. You can revise your inputs or restart the analysis.</p>
+            <div class="action-buttons">
+                <a href="prediction.html" class="btn">Edit Prediction</a>
+                <button class="btn restart-btn" id="restartButton">Restart Analysis</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PredictiveNetUI. Designed for better insights.</p>
+    </footer>
+
+    <script src="piuresult.js"></script>
+</body>
+</html>

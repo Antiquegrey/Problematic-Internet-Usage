@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Internet Usage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/piupredict.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Internet Usage Prediction</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Survey</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Form Section -->
+        <section class="form-section">
+            <h1>Predict Your Internet Usage</h1>
+            <p>Please provide some details about your internet usage habits, and we will analyze them.</p>
+            <form id="predictionForm">
+                <!-- Usage Time -->
+                <div class="form-group">
+                    <label for="usageTime">Average daily usage time (in hours)</label>
+                    <input type="number" id="usageTime" name="usageTime" required min="0">
+                </div>
+
+                <!-- Websites Visited -->
+                <div class="form-group">
+                    <label for="websites">Websites you frequently visit</label>
+                    <textarea id="websites" name="websites" placeholder="Enter websites here, separated by commas" required></textarea>
+                </div>
+
+                <!-- Behavioral Patterns -->
+                <div class="form-group">
+                    <label>Behavioral Patterns</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="patterns" value="High Frequency Usage"> High Frequency Usage
+                        </label>
+                        <label>
+                            <input type="checkbox" name="patterns" value="Multitasking"> Multitasking
+                        </label>
+                        <label>
+                            <input type="checkbox" name="patterns" value="Late Night Usage"> Late Night Usage
+                        </label>
+                        <label>
+                            <input type="checkbox" name="patterns" value="Social Media Addiction"> Social Media Addiction
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Predict</button>
+            </form>
+        </section>
+
+        <!-- Guidance Section -->
+        <section class="guidance-section">
+            <h2>Guidance</h2>
+            <p>Once you submit your information, we will analyze your usage and suggest ways to manage your internet habits more effectively.</p>
+            <p>If you need any assistance, feel free to reach out to us through the contact page.</p>
+        </section>
+        <div class="btn">
+            <a href="./piuresult.html" >result</a>
+        
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Internet Usage Prediction. All Rights Reserved.
+    </footer>
+
+    <script src="../js/piupredict.js"></script>
+</body>
+</html>
